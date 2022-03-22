@@ -32,7 +32,7 @@ public class StatGenerator {
 
     public double offensivePlayerImpactScore(){
         double result = 0.0;
-        result += stats.get("points")*stats.get("FG%");
+        result += stats.get("Points")*stats.get("FG%");
         result += 0.7 * stats.get("OffensiveRebounds");
         result += 0.7 * stats.get("Assists");
         result+= stats.get("3PM") * (stats.get("3P%") - 30);

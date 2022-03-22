@@ -12,7 +12,7 @@ public class NBAStatTextInterface {
         Scanner console = new Scanner(System.in);
         System.out.println("Points: ");
         enteredStats.add(console.nextDouble());
-        System.out.println("Offensive boards ");
+        System.out.println("Offensive boards: ");
         enteredStats.add(console.nextDouble());
         System.out.println("Total Boards: ");
         enteredStats.add(console.nextDouble());
@@ -31,8 +31,8 @@ public class NBAStatTextInterface {
         System.out.println("steals: ");
         enteredStats.add(console.nextDouble());
         StatGenerator model = new StatGenerator(enteredStats);
-        System.out.println("PLayer Defensive Score" + model.defensivePlayerImpactScore());
-        System.out.println("PLayer Offensive Score" + model.offensivePlayerImpactScore());
-        System.out.println("PLayer total Score" + model.playerImpactScore());
+        System.out.println("PLayer Defensive Score: " + model.defensivePlayerImpactScore());
+        System.out.println("PLayer Offensive Score: " + model.offensivePlayerImpactScore());
+        System.out.println("PLayer total Score: " + model.playerImpactScore());
     }
 }
