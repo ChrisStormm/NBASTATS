@@ -27,7 +27,7 @@ public class StatGenerator {
     }
 
     public double playerImpactScore(){
-       throw new RuntimeException("method not implemented");
+       return this.offensivePlayerImpactScore()+this.defensivePlayerImpactScore();
     }
 
     public double offensivePlayerImpactScore(){
